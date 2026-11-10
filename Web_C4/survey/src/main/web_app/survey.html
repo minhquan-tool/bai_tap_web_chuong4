@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Murach's Java Servlets and JSP</title>
+    <link rel="stylesheet" href="styles/survey.css">
+</head>
+<body>
+    <img src="images/murachlogo.png" alt="Murach Logo" width="100">
+
+    <h1>Survey</h1>
+
+    <p>If you have a moment, we'd appreciate it if you would fill out this survey</p>
+
+    <h2>Your information</h2>
+    <form action="survey" method="post">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName"><br>
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName"><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="dateOfBirth">Date of Birth</label>
+        <input type="text" id="dateOfBirth" name="dateOfBirth"><br>
+
+
+        <h3>How did you hear about us?</h3>
+        <label>
+            <input type="radio" name="heardFrom" value="searchEngine" checked>
+            Search engine
+        </label>
+
+        <label>
+            <input type="radio" name="heardFrom" value="wordOfMouth">
+            Word of mouth
+        </label>
+
+        <label>
+            <input type="radio" name="heardFrom" value="Social Media">
+            Social Media
+        </label>
+
+        <label>
+            <input type="radio" name="heardFrom" value="other">
+            Other
+        </label>
+        
+        <h4>Would you like to receive announcements about 
+            new CDs and special offers?</h4>
+        <p>
+            <label>
+                <input type="checkbox" name="wantsUpdates" value="yes">
+                YES, I'd like that.
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="wantsEmailUpdates" value="yes">
+                YES, please send me email announcements.
+            </label>
+        </p>
+        <label for="contactVia">Please contact me by: </label>
+        <select id="contactVia" name="contactVia">
+            <option value="both">Email or postal mail</option>
+            <option value="email">Email only</option>
+            <option value="postalMail">Postal mail only</option>
+        </select>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+</html>
